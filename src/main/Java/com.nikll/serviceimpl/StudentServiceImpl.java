@@ -4,6 +4,7 @@ import com.nikll.dao.StudentDao;
 import com.nikll.entity.Student;
 import com.nikll.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -12,6 +13,8 @@ import java.util.List;
  * @Date: 2018/12/18 15:48
  * @Description:
  */
+
+@Service
 public class StudentServiceImpl implements StudentService {
     @Autowired
     StudentDao studentDao;

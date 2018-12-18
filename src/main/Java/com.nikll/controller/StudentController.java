@@ -4,6 +4,7 @@ import com.nikll.entity.Student;
 import com.nikll.service.StudentService;
 import com.nikll.util.Page;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -19,6 +20,10 @@ import java.util.List;
  * @Date: 2018/12/18 15:51
  * @Description:
  */
+
+
+@Controller
+@RequestMapping("")
 public class StudentController {
     @Autowired
     private StudentService studentService;
