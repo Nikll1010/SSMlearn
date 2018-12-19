@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="maven-parent-1.0-SNAPSHOT.war">
+    <root id="archive" name="SSMDemo.war">
       <element id="artifact" artifact-name="SSMlearn:war exploded" />
     </root>
   </artifact>

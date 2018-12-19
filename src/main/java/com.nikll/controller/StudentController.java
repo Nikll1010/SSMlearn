@@ -2,6 +2,7 @@ package com.nikll.controller;
 
 import com.nikll.entity.Student;
 import com.nikll.service.StudentService;
+import com.nikll.serviceimpl.StudentServiceImpl;
 import com.nikll.util.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,6 +31,7 @@ public class StudentController {
      */
     @Autowired
     private StudentService studentService;
+//    private StudentServiceImpl studentService;
 
     @RequestMapping("/addStudent")
     public String addStudent(HttpServletRequest request, HttpServletResponse response) {
