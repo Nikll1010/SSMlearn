@@ -1,5 +1,6 @@
 package com.nikll.controller;
 
+
 import com.nikll.entity.Student;
 import com.nikll.service.StudentService;
 import com.nikll.serviceimpl.StudentServiceImpl;
@@ -31,9 +32,8 @@ public class StudentController {
      */
     @Autowired
     private StudentService studentService;
-//    private StudentServiceImpl studentService;
 
-    @RequestMapping("/addStudent")
+    @RequestMapping(value = "/addStudent")
     public String addStudent(HttpServletRequest request, HttpServletResponse response) {
 
         Student student = new Student();
