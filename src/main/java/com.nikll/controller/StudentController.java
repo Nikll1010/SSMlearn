@@ -7,6 +7,7 @@ import com.nikll.serviceimpl.StudentServiceImpl;
 import com.nikll.util.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -18,22 +19,19 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @Auther: Administrator
- * @Date: 2018/12/18 15:51
- * @Description:
+ * Student 控制器
+ *
+ * @author: @我没有三颗心脏
+ * @create: 2018-04-23-下午 13:27
  */
-
-
 @Controller
 @RequestMapping("")
 public class StudentController {
-    /**
-     *
-     */
-    @Autowired
+
+//    @Autowired
     private StudentService studentService;
 
-    @RequestMapping(value = "/addStudent")
+    @RequestMapping("/addStudent")
     public String addStudent(HttpServletRequest request, HttpServletResponse response) {
 
         Student student = new Student();
@@ -130,5 +128,6 @@ public class StudentController {
         studentService.updateStudent(student);
         return "redirect:listStudent";
     }
-
 }
+
+

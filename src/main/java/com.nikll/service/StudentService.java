@@ -1,7 +1,8 @@
 package com.nikll.service;
 
 import com.nikll.entity.Student;
-import org.springframework.stereotype.Service;
+
+
 
 import java.util.List;
 
@@ -10,8 +11,8 @@ import java.util.List;
  * @Date: 2018/12/18 15:44
  * @Description:
  */
-@Service
 public interface StudentService {
+
     /**
      * 获取到 Student 的总数
      * @return

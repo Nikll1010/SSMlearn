@@ -1,8 +1,8 @@
 package com.nikll.dao;
 
 import com.nikll.entity.Student;
-import org.apache.ibatis.annotations.Mapper;
-//import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Repository;
+
 
 import java.util.List;
 
@@ -11,8 +11,7 @@ import java.util.List;
  * @Date: 2018/12/18 15:41
  * @Description:
  */
-@Mapper
-//@Repository
+@Repository
 public interface StudentDao {
     int getTotal();
     void addStudent(Student student);
